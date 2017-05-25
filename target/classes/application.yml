@@ -1,0 +1,17 @@
+management.security.enabled: false
+security.basic.enabled: false
+
+server:
+  port: 9889
+  contextPath: /subjects
+
+spring:
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/subjects?autoReconnect=true&tinyInt1isBit=false&useSSL=false&zeroDateTimeBehavior=convertToNull
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
